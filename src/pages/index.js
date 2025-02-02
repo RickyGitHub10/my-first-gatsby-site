@@ -4,7 +4,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 //import layout
 import Layout from '../components/layout'
-//adding a static image
+//adding a STATIC image
 import { StaticImage } from 'gatsby-plugin-image'
 
 
