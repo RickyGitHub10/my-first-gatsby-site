@@ -19,6 +19,7 @@ const BlogPage = ({data}) => {
   )
 }
 
+//copied from graphql url
 export const query = graphql`
   query {
     allFile {
