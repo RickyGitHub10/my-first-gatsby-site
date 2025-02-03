@@ -6,6 +6,8 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 //adding a STATIC image
 import { StaticImage } from 'gatsby-plugin-image'
+//adding seo 
+import Seo from '../components/seo'
 
 
 
@@ -16,18 +18,19 @@ const IndexPage = () => {
     <main>
       <h1>Welcome to Ricky's Gatsby site!</h1>
       <Link to ="/about">About</Link>
-      <p>I'm making this by following the Gatsby Tutorial.</p>
+      
       <StaticImage
         alt="pink porsch 911 t, from lex cars and coffee"
         src="../images/pink911t.jpg"
       />
+      
     </main>
     </Layout>
   )
 }
 
-// You'll learn about this in the next task, just copy it for now
-export const Head = () => <title>Home Page</title>
+// Brower tab name, hover mouse over tab
+export const Head = () => <Seo title="Home Page" />
 
 // Step 3: Export your component
 export default IndexPage
